@@ -1,0 +1,49 @@
+
+RDD 5 
+
+RDD  Transformation Action  Stage（阶段）
+
+
+RDD
+
+(手机号,LAC)
+
+(186, 1) 
+(186, 2)
+
+it.toList.sortBy
+
+URLCount
+
+
+
+Partitioner
+
+
+(K.hashcode & Integer.max) % (reducer number)   
+5
+
+0 ~ 4
+
+A,10
+R,100
+W, 200
+G, 100
+F, 200
+
+
+hashParitioner  相同Key的数据一定会在同一个reducer中，一个reducer中就只有一个Key
+
+
+
+
+
+
+
+
+
+
+
+
+
+
